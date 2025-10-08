@@ -1,0 +1,44 @@
+---
+title: "Lab 06 In class assignment"
+author: "YOUR NAME HERE"
+format: docx
+editor: visual
+---
+
+Instructions
+
+Answer the questions below with the R chunks inserted after the question. Don't forget to set up your environment and print the information about your session at the end of the document!
+
+Turn it in to Canvas as a docx or pdf file by October 11th, 2025 at 11:59 PM. Reach out if you have any questions!
+
+Question 1
+
+The following data are 40 measurements of the firing rate of the neurons of the prefrontal cortex of rats that are smelling a predator odor. The data are log-transformed, with the original units in Hz (spikes/second).
+
+0.0,0.1,0.1,0.3,0.4,0.4,0.4,0.5,0.5,0.5,
+
+0.6,0.6,0.7,0.7,0.7,0.7,0.8,0.8,0.8,1.2,
+
+1.2,1.3,1.4,1.6,1.9,2.0,2.1,2.1,2.2,2.2,
+
+2.3,2.4,2.5,2.5,2.7,2.7,2.7,2.7,2.8,3.1
+
+a. Make an exploratory graph of the data using base R. Then make an explanatory graph of the data using ggplot(). 
+
+b. Examine the graph. Do the data appear to be sampled from a population having a normal distribution? Why or why not? Identify all the features on which you based your conclusions.
+
+Question 2
+
+Use the base R function to create a random normal distribution. Play around with the parameters of the distribution. How does the distribution change when you increase the sd significantly? What about the sample size? How does this relate to the Law of Large numbers and central limit theorem (go to the book for these concepts; we will cover them in class later)?
+
+Question 3
+
+Download the FIFAplayers_20.csv on Classroom. Plot a density function of the age and show below. Now plot the density function of the height and show below. How are each distributed (normal, skewed, etc.?). Again, don’t just examine the graph. Look at other ways to test the assumption of normality. What is the average age of these football players? Is it the same as the median age? Using the descriptive stats that we have discussed; can you tell the nationality of a player from Uruguay and Denmark, regardless of the team they play for, using only their height? What is the proportion of all FIFA 2020 players that are taller than 185 cm?
+
+Question 4
+
+The time it takes an individual popcorn kernel to pop conforms to a normal distribution very closely. Assume that the mean time to popping is 165.0 seconds with a standard deviation of 92.1 seconds. 
+
+a. What is the probability that a kernel of popcorn would take longer than 200 seconds to pop?
+
+b. What is the probability that a kernel of popcorn would pop in less than 120 seconds?

@@ -6,7 +6,7 @@
 
 You are investigating the thermoreceptive striking behavior of the Western Diamondback Rattlesnake (*Crotalus atrox*). Using robotic prey, you recorded the `Strike_Latency_sec` (how fast the snake strikes) across three different target temperatures: **25°C (Ambient), 37°C (Mouse Temp), and 40°C (Bird Temp)**.
 
-**Your Tech:** Your "AI Grad Student" (Copilot/Gemini via Positron).
+**Your Tech:** Your "AI Grad Student" (Copilot/Gemini via Positron/Antigravity).
 
 **The Challenge:** You must direct your AI to analyze this data. But remember: your AI does not know what a pit viper is. It has not read Chapter 5 of *An Immense World*. If you do not provide biological guardrails, the AI will make "human-centric" assumptions and ruin the analysis.
 
@@ -14,9 +14,12 @@ You are investigating the thermoreceptive striking behavior of the Western Diamo
 
 ## Step 1: Load the Data
 
-Instruct your AI in the Positron Assistant chat to write the R code to load the `PitViper_Thermal_Strikes.csv` dataset and display the first few rows. 
+As the Principal Investigator, you must direct your AI to pull the data directly from our repository. In the Positron Assistant chat, instruct the AI to write the R code to load the PitViper_Thermal_Strikes.csv dataset and display the first few rows.
 
-Paste the AI's code into the block below, and run it in your Positron console.
+Give the AI this exact URL to read from:
+https://raw.githubusercontent.com/djtobiansky/StatsLab/refs/heads/main/NEU474/PitViper_Thermal_Strikes.csv
+
+Once the AI generates the correct script, paste that code into the R chunk below and run it in your console to verify the data loaded correctly. Ensure the AI annotates each line of code so you can follow along. 
 
 ```R
 # Paste AI code here to load the CSV and show the head of the dataframe.
@@ -30,7 +33,7 @@ Paste the AI's code into the block below, and run it in your Positron console.
 
 First, let's see what happens when we let the AI run wild without biological context. Instruct your AI to run a One-Way ANOVA comparing `Strike_Latency_sec` across the three `Target_Temp` groups using the *entire* dataset. Ask it to generate a boxplot of these results using `ggplot2`.
 
-Paste the code below, run it, and save the resulting messy graph.
+Paste the code below, run it, and save the resulting messy graph. Ensure the AI annotates each line of code so you can follow along. 
 
 ```R
 # Paste AI code here to run a One-Way ANOVA on the whole dataset and plot it.
@@ -55,7 +58,7 @@ Now, act as the Principal Investigator. You must correct your AI Grad Student.
 
 **[Type your prompt here. E.g., "Wait, pit vipers rely on thermal..."]**
 
-Have your AI write the code to filter the dataset to only include trials on `20C_Cool_Soil`. Then, run the One-Way ANOVA again, apply a Tukey HSD correction, and plot the clean, corrected data.
+Have your AI write the code to filter the dataset to only include trials on `20C_Cool_Soil`. Then, run the One-Way ANOVA again, apply a Tukey HSD correction, and plot the clean, corrected data. Ensure the AI annotates each line of code so you can follow along. 
 
 ```R
 # Paste AI code here to filter the data, run the corrected ANOVA & Tukey HSD, and generate the final boxplot.

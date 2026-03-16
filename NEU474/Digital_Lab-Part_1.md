@@ -19,7 +19,7 @@ As the Principal Investigator, you must direct your AI to pull the data directly
 Give the AI this exact URL to read from:
 https://raw.githubusercontent.com/djtobiansky/StatsLab/refs/heads/main/NEU474/PitViper_Thermal_Strikes.csv
 
-Once the AI generates the correct script, paste that code into the R chunk below and run it in your console to verify the data loaded correctly. Ensure the AI annotates each line of code so you can follow along. 
+Once the AI generates the correct script, paste that code into the R chunk below and run it in your console to verify the data loaded correctly. Ensure the AI annotates each line of code so you can follow along. Make a new markdown file (or download this file) and copy and paste this entire document and save it into your new folder (ask Dr. T if you are struggling here). 
 
 ```R
 # Paste AI code here to load the CSV and show the head of the dataframe.
